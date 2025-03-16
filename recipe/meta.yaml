@@ -1,5 +1,5 @@
 {% set name = "fortls" %}
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fortls-{{ version }}.tar.gz
-  sha256: 33d0f8eddc22778d06380c95a37d2d59baf56ca390268bf1408840ac415ab830
+  sha256: b43b2b8cbd447ae848c63b8f008c2df96fd48c3a967b33f6ed64b3421496883b
 
 build:
   skip: true  # [py<37]
