@@ -1,5 +1,5 @@
 {% set name = "fortls" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fortls-{{ version }}.tar.gz
-  sha256: 4ec963d29977b57b7ce470986aba3ba26f40d08d96e358bb63f19c9a23f8a930
+  sha256: 33d0f8eddc22778d06380c95a37d2d59baf56ca390268bf1408840ac415ab830
 
 build:
   skip: true  # [py<37]
@@ -23,6 +23,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
     - setuptools_scm
     - setuptools_scm_git_archive
   run:
