@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fortls-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/fortls-{{ version }}.tar.gz
   sha256: b43b2b8cbd447ae848c63b8f008c2df96fd48c3a967b33f6ed64b3421496883b
 
 build:
@@ -14,7 +14,7 @@ build:
   entry_points:
     - fortls = fortls.__init__:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   build:
